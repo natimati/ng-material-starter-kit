@@ -28,7 +28,43 @@ import { LoginFormComponentModule } from './components/login-form/login-form.com
 import { LoginServiceModule } from './services/login.service-module';
 
 @NgModule({
-  imports: [RouterModule.forRoot([{ path: 'products', component: ProductListComponent }, { path: 'categories', component: CategoriesListComponent }, { path: 'crypto', component: CryptoChipsComponent }, { path: 'public-holidays', component: PublicHolidaysComponent }, { path: 'checkbox-categories', component: CategoriesCheckboxComponent }, { path: 'categories-menu', component: CategoriesMenuComponent }, { path: 'product-search', component: ProductTableComponent }, { path: 'create-product', component: ProductFormComponent }, { path: 'create-employee', component: EmployeeFormComponent }, { path: 'login', component: LoginFormComponent }]), ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoChipsComponentModule, CryptoChipsServiceModule, PublicHolidaysComponentModule, PublicHolidaysServiceModule, CategoriesCheckboxComponentModule, CategoriesMenuComponentModule, ProductTableComponentModule, ProductFormComponentModule, EmployeeFormComponentModule, EmployeeServiceModule, LoginFormComponentModule, LoginServiceModule],
+  imports: [RouterModule.forRoot([{
+    path: 'products', component: ProductListComponent
+  }, {
+    path: 'categories', component: CategoriesListComponent
+  }, {
+    path: 'crypto', component: CryptoChipsComponent
+  }, {
+    path: 'public-holidays', component: PublicHolidaysComponent
+  }, {
+    path: 'checkbox-categories', component: CategoriesCheckboxComponent
+  }, {
+    path: 'categories-menu', component: CategoriesMenuComponent
+  }, {
+    path: 'product-search', component: ProductTableComponent
+  }, {
+    path: 'create-product', component: ProductFormComponent
+  }, {
+    path: 'create-employee', component: EmployeeFormComponent
+  }, {
+    path: 'login', component: LoginFormComponent
+  }]),
+    ProductListComponentModule,
+    ProductsServiceModule,
+    CategoriesListComponentModule,
+    CategoriesServiceModule,
+    CryptoChipsComponentModule,
+    CryptoChipsServiceModule,
+    PublicHolidaysComponentModule,
+    PublicHolidaysServiceModule,
+    CategoriesCheckboxComponentModule,
+    CategoriesMenuComponentModule,
+    ProductTableComponentModule,
+    ProductFormComponentModule,
+    EmployeeFormComponentModule,
+    EmployeeServiceModule,
+    LoginFormComponentModule,
+    LoginServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
