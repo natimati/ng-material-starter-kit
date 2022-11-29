@@ -1,26 +1,32 @@
+<div class="container">
 <form [formGroup]="employeeForm" (ngSubmit)="onEmployeeFormSubmitted(employeeForm)">
-  <div>
-    <mat-form-field appearance="fill">
-      <mat-label>Name</mat-label>
+  <div  class="row justify-content-center">
+  <div class="col col-md-5 d-flex">
+    <mat-form-field appearance="outline" class="flex-grow-1">
+      <mat-label class="form-label">Name</mat-label>
       <input matInput type="text" placeholder="Name" formControlName="name" required>
       <mat-error *ngIf="employeeForm.get('name')!.invalid">name is invalid</mat-error>
     </mat-form-field>
   </div>
-  <div>
-    <mat-form-field appearance="fill">
+  <div class="col  col-md-4 d-flex" >
+    <mat-form-field appearance="outline" class="flex-grow-1">
       <mat-label>Salary</mat-label>
       <input matInput type="number" placeholder="Salary" formControlName="salary" required>
       <mat-error *ngIf="employeeForm.get('salary')!.invalid">salary is invalid</mat-error>
     </mat-form-field>
   </div>
-  <div>
-    <mat-form-field appearance="fill">
+  <div class="col  col-md-3 d-flex">
+    <mat-form-field appearance="outline" class="flex-grow-1">
       <mat-label>Age</mat-label>
       <input matInput type="number" placeholder="Age" formControlName="age" required>
       <mat-error *ngIf="employeeForm.get('age')!.invalid">age is invalid</mat-error>
     </mat-form-field>
   </div>
-  <div>
-    <button type="submit" mat-raised-button color="primary">Submit</button>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-end">
+      <button  type="submit"  class="btn btn-primary">Submit</button>
+    </div>
   </div>
 </form>
+</div>
