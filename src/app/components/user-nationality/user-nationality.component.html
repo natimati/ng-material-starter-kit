@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-title>name nationality</mat-card-title>
+  <mat-card-content>
+    <ng-container *ngIf="userNationality$ | async as item">
+      <p>{{ item.name.toUpperCase() }} is with {{ item.country[0].probability }} probability is from {{ item.country[0].country_id }}</p>
+    </ng-container>
+  </mat-card-content>
+</mat-card>
