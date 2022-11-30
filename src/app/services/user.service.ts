@@ -4,11 +4,11 @@ import { Observable } from 'rxjs';
 import { UserModel } from '../models/user.model';
 
 @Injectable()
-export class RegisterService {
+export class UserService {
   constructor(private _httpClient: HttpClient) {
   }
 
-  createNewUser(user: Omit<UserModel, 'id'>): Observable<UserModel> {
-    return this._httpClient.post<UserModel>('https://fakestoreapi.com/users', user);
+  getOne(id: number): Observable<UserModel> {
+    return this._httpClient.get<UserModel>(`https://fakestoreapi.com/users/${id}`);
   }
 }

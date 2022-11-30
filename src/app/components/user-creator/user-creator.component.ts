@@ -32,8 +32,8 @@ export class UserCreatorComponent {
       username: registerForm.get('username')?.value,
       password: registerForm.get('password')?.value,
       name: {
-        firstName: registerForm.get('firstname')?.value,
-        lastName: registerForm.get('lastname')?.value
+        firstname: registerForm.get('firstname')?.value,
+        lastname: registerForm.get('lastname')?.value
       },
       address: {
         city: registerForm.get('city')?.value,
